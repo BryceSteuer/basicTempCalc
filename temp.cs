@@ -21,7 +21,8 @@ namespace celsiusConversion
 
         // Print Fahrenheit output
         Console.WriteLine($"The temperature, therefore, is {degreesFahrenheit} F");
-
+          
+          // May switch to a switch statement soon
           if (degreesFahrenheit < 45)
           {
             Console.WriteLine("Cold today, is it not?");
