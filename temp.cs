@@ -35,10 +35,12 @@ namespace basicTempCalc
                     case < 45:
                         Console.WriteLine("Cold today, is it not?");
                         break;
-                    case > 45 && case < 65:
+                    case > 45:
+                    case < 65:
                         Console.WriteLine("Pretty mild today. Be sure to wear a sweater outside.");
                         break;
-                    case > 65 && case < 85:
+                    case > 65:
+                    case < 85:
                         Console.WriteLine("It is fairly warm today. Why not take a walk?");
                         break;
                     case > 85:
@@ -72,10 +74,12 @@ namespace basicTempCalc
                     case < 14:
                         Console.WriteLine("Cold today, is it not?");
                         break;
-                    case > 14 && case < 22:
+                    case > 14:
+                    case < 22:
                         Console.WriteLine("Pretty mild today. Be sure to wear a sweater outside.");
                         break;
-                    case > 22 && case < 26:
+                    case > 22:
+                    case < 26:
                         Console.WriteLine("It is fairly warm today. Why not take a walk?");
                         break;
                     case > 26:
