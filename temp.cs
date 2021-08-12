@@ -29,21 +29,24 @@ namespace basicTempCalc
                 Console.WriteLine($"The temperature, therefore, is {degreesFahrenheit} F");
 
                 // May switch to a switch statement soon
-                if (degreesFahrenheit < 45)
+                
+                switch (degreesFahrenheit) 
                 {
-                    Console.WriteLine("Cold today, is it not?");
-                }
-                else if (degreesFahrenheit > 45 && degreesFahrenheit < 75)
-                {
-                    Console.WriteLine("Pretty mild today. Be sure to wear a sweater outside.");
-                }
-                else if (degreesFahrenheit > 75)
-                {
-                    Console.WriteLine("Very warm today. Avoid overexertion if possible!");
-                }
-                else
-                {
-                    Console.WriteLine("Enjoy your day!");
+                    case < 45:
+                        Console.WriteLine("Cold today, is it not?");
+                        break;
+                    case > 45 && case < 65:
+                        Console.WriteLine("Pretty mild today. Be sure to wear a sweater outside.");
+                        break;
+                    case > 65 && case < 85:
+                        Console.WriteLine("It is fairly warm today. Why not take a walk?");
+                        break;
+                    case > 85:
+                        Console.WriteLine("Very warm today. Avoid overexertion if possible!");
+                        break;
+                    default:
+                        Console.WriteLine("Enjoy your day!");
+                        break;
                 }
             }
             else if (celOrFar == "Celsius")
@@ -63,22 +66,24 @@ namespace basicTempCalc
                 // Print Fahrenheit output
                 Console.WriteLine($"The temperature, therefore, is {degreesCelsius} C");
 
-                // May switch to a switch statement soon
-                if (degreesCelsius < 14)
+                // switch statements to determine msg based on degrees Celsius
+                switch (degreesCelsius) 
                 {
-                    Console.WriteLine("Cold today, is it not?");
-                }
-                else if (degreesCelsius > 14 && degreesCelsius < 22)
-                {
-                    Console.WriteLine("Pretty mild today. Be sure to wear a sweater outside.");
-                }
-                else if (degreesCelsius > 22)
-                {
-                    Console.WriteLine("Very warm today. Avoid overexertion if possible!");
-                }
-                else
-                {
-                    Console.WriteLine("Enjoy your day!");
+                    case < 14:
+                        Console.WriteLine("Cold today, is it not?");
+                        break;
+                    case > 14 && case < 22:
+                        Console.WriteLine("Pretty mild today. Be sure to wear a sweater outside.");
+                        break;
+                    case > 22 && case < 26:
+                        Console.WriteLine("It is fairly warm today. Why not take a walk?");
+                        break;
+                    case > 26:
+                        Console.WriteLine("Very warm today. Avoid overexertion if possible!");
+                        break;
+                    default:
+                        Console.WriteLine("Enjoy your day!");
+                        break;
                 }
             }
         }
