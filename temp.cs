@@ -4,9 +4,8 @@ namespace basicTempCalc
 {
     class Program
     {
-        static void Main(string[] args)
-        {
-
+       static void tempCalc()
+       {
             Console.WriteLine("Do you wish to know the temperature in Celsius or in Fahrenheit?");
             string celOrFar = Console.ReadLine();
 
@@ -89,7 +88,12 @@ namespace basicTempCalc
                         Console.WriteLine("Enjoy your day!");
                         break;
                 }
-            }
-        }
+            } 
+       }
+        
+       static void Main(string[] args)
+       {
+                tempCalc():
+       }
     }
 }
