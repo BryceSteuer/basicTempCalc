@@ -93,7 +93,7 @@ namespace basicTempCalc
         
        static void Main(string[] args)
        {
-                tempCalc():
+                tempCalc();
        }
     }
 }
